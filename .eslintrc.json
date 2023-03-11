@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2022": true,
+        "node": true
+    },
+
+    "extends": [
+        "eslint:recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:import/recommended",
+        "airbnb",
+        "prettier"
+    ],
+
+    "rules": {
+        "no-use-before-define":"off",
+        "spaced-comment": "off",
+        "no-shadow":"off",
+        "one-var":"off",
+        "import/no-duplicates":"warn",
+        "semi":"error"
+    }
+}
