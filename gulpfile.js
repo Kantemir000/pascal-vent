@@ -63,6 +63,7 @@ gulp.task("copy-assets", () => {
     .pipe(gulp.dest(dist + "/fonts"))
 
   return gulp.src("./src/img/**/*.*")
+    .pipe(webp())
     .pipe(gulp.dest(dist + "/img"))
     .pipe(browsersync.stream());
 });
