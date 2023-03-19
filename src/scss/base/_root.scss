@@ -1,0 +1,64 @@
+:root {
+	--color-main: #d9fadd;
+	--color-text-btn: #fff;
+	--color-text-picture: #fff;
+	--color-text-contact: #7b897d;
+
+	--color-title-dark: #495e4c;
+	--color-title-light: #78c081;
+	--color-descr-dark: #495d4c;
+	--color-descr-light: #7ca381;
+	--color-paragraph: #848484;
+
+	--color-btn-enabled: #5ccd6a;
+	--color-btn-disabled: #9cd3a3;
+	--color-btn-hover: #54e165;
+
+	--font-size-title-xxxxl: 6.4rem;
+	--font-size-title-xxxl: 4.5rem;
+	--font-size-title-xxl: 3.5rem;
+	--font-size-title-xl: 2.6rem;
+	--font-size-title-l: 2.4rem;
+	--font-size-title-m: 2.1rem;
+	--font-size-title-s: 1.8rem;
+
+	--font-size-descr-xl: 2.2rem;
+	--font-size-descr-l: 2rem;
+	--font-size-descr-m: 1.6rem;
+	--font-size-descr-s: 1.4rem;
+
+	--font-size-item-xl: 2.4rem;
+	--font-size-item-l: 1.6rem;
+	--font-size-item-m: 1.5rem;
+	--font-size-item-s: 1.4rem;
+
+	--font-size-btn-l: 1.7rem;
+	--font-size-btn-m: 1.5rem;
+	--font-size-btn-s: 1.4rem;
+
+	--animation-burger: fadeIn;
+}
+
+@media (max-width: 992px) {
+	:root {
+		--font-size-title-xxxxl: 5.4rem;
+		--font-size-descr-xl: 2rem;
+		--font-size-descr-m: 1.4rem;
+	}
+}
+
+@media (max-width: 576px) {
+	:root {
+		--font-size-title-xxxxl: 3.5rem;
+		--font-size-descr-xl: 1.8rem;
+	}
+}
+
+@media (max-width: 359px) {
+	:root {
+		--font-size-title-xxxxl: 3.1rem;
+		--font-size-descr-xl: 1.6rem;
+		--font-size-descr-m: 1.3rem;
+		--font-size-btn-l: 1.4rem;
+	}
+}

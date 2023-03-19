@@ -1,0 +1,113 @@
+.promo {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	background: linear-gradient(
+			180deg,
+			#f1f1f1 0%,
+			#f0f2f1 16.25%,
+			#ebedec 43.26%,
+			#e6e8e7 72.5%,
+			#dee2e1 100%
+		),
+		center center/cover no-repeat;
+	z-index: 1;
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;
+		background: url("../img/bitmaps/bg/conditioner.webp") 44.5vw
+			center/cover no-repeat;
+	}
+	&__btn {
+		margin-top: 6.3rem;
+	}
+	&__wrapper-info {
+		padding: 16.7rem 0 6.4rem 0;
+		max-width: 52.5rem;
+	}
+	&__header-block {
+		width: 100%;
+		font-family: "Ruberoid", sans-serif;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: start;
+		align-items: center;
+	}
+	&__subheader-block {
+		width: 100%;
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__header,
+	&__subheader {
+		font-size: var(--font-size-title-xxxxl);
+		line-height: calc(var(--font-size-title-xxxxl) + 1rem);
+		text-transform: capitalize;
+		color: var(--color-title-dark);
+	}
+	&__header {
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: var(--color-title-light);
+	}
+	&__line {
+		width: 14.8rem;
+		height: 0.3rem;
+		background: var(--color-title-light);
+		border-radius: 0.15rem;
+	}
+
+	&__descr-block {
+		margin-top: 2rem;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+	&__descr {
+		font-size: var(--font-size-descr-xl);
+		line-height: calc(var(--font-size-descr-xl) + 1rem);
+		color: var(--color-descr-light);
+	}
+	&__dots {
+		height: 1rem;
+		margin: 1.1rem 1.2rem 0 0;
+	}
+
+	&__contacts {
+		margin-top: 5rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: wrap;
+	}
+	&__gps-block,
+	&__tel-block {
+		max-width: 20rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__tel-block_mobile {
+		display: none;
+	}
+	&__gps-icon,
+	&__tel-icon {
+		margin-right: 2.2rem;
+		height: 3.2rem;
+	}
+	&__gps-info,
+	&__tel-info a {
+		display: flex;
+		font-size: var(--font-size-descr-m);
+		line-height: 1.5;
+		color: var(--color-text-contact);
+		text-decoration: none;
+	}
+}

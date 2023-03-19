@@ -1,0 +1,17 @@
+.menu {
+	&__items {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 4rem;
+	}
+	&__item a {
+		display: block;
+		font-size: var(--font-size-item-m);
+		line-height: 3.5;
+		text-transform: lowercase;
+		color: var(--color-title-dark);
+		text-decoration: none;
+		-webkit-tap-highlight-color: transparent;
+	}
+}

@@ -1,0 +1,55 @@
+@media (max-width: 1200px) {
+	.btn {
+		&_connect {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.btn {
+		&_burger,
+		&_submit {
+			display: flex;
+		}
+		&__element {
+			padding: 3.2rem;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.btn {
+		&_submit {
+			border-radius: 3rem;
+		}
+		&__element {
+			padding: 2.4rem 3rem;
+			border-radius: 2rem;
+			letter-spacing: unset;
+		}
+	}
+}
+
+@media (max-width: 359px) {
+	.btn {
+		&__element {
+			padding: 2.2rem 3rem;
+		}
+		&__burger-container {
+			margin: 0.8rem;
+			padding: 1.5rem 1.1rem;
+		}
+		&__burger-icon {
+			height: 1.5rem;
+		}
+	}
+}
+
+@media (any-hover: hover) {
+	.btn {
+		&:hover &__element {
+			background-color: var(--color-btn-hover);
+		}
+	}
+}

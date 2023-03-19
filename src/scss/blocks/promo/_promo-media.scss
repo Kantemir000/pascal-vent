@@ -1,0 +1,108 @@
+@media (max-width: 992px) {
+	.promo {
+		&__btn {
+			margin-top: 4.5rem;
+		}
+		&__wrapper-info {
+			max-width: 45rem;
+			padding: 14.8rem 0 0 0;
+		}
+		&__descr-block {
+			margin-top: 3rem;
+		}
+		&__contacts {
+			margin-top: 4.6rem;
+		}
+	}
+}
+
+@media (max-width: 768px) or ((max-width: 1024px) and (orientation: portrait)) {
+	.promo {
+		height: auto;
+		background: linear-gradient(
+				270deg,
+				#f2f2f2 0.09%,
+				#f0f2f1 17.41%,
+				#efefef 35.53%,
+				#eaeceb 51.42%,
+				#e7e8ea 68.94%,
+				#e2e6e5 82.21%,
+				#dee2e1 99.91%
+			),
+			center center/contain no-repeat;
+		&::before {
+			width: 200%;
+			bottom: -50%;
+			top: unset;
+			right: -48.5%;
+			background: url("../img/bitmaps/bg/conditioner.webp") center
+				center/contain no-repeat;
+			transform: rotate(90deg);
+		}
+		&__wrapper-info {
+			padding: 14.8rem 0 83vmin 0;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.promo {
+		height: auto;
+		&__wrapper-info {
+			max-width: 32rem;
+			padding: 14.8rem 0 83vmin 0;
+		}
+		&__header-block {
+			margin: 0 auto;
+			max-width: 28.7rem;
+		}
+		&__line {
+			width: 9.3rem;
+			height: 0.2rem;
+		}
+		&__contacts {
+			justify-content: space-between;
+			gap: 3.3rem 1rem;
+		}
+		&__tel-block_mobile {
+			display: flex;
+		}
+		&__tel-block_desktop > &__tel-info a:not(:first-child) {
+			display: none;
+		}
+		&__gps-block {
+			max-width: none;
+		}
+		.promo__gps-icon,
+		.promo__tel-icon {
+			margin-right: 1.2rem;
+			height: 2rem;
+		}
+	}
+}
+
+@media (max-width: 359px) {
+	.promo {
+		&__wrapper-info {
+			max-width: 28rem;
+			padding: 13rem 0 85vmin 0;
+		}
+		&__header-block {
+			max-width: 25.4rem;
+		}
+		&__line {
+			width: 8.3rem;
+		}
+		&__dots {
+			height: 0.8rem;
+		}
+		&__descr-block {
+			margin-top: 2rem;
+		}
+		&__contacts {
+			margin-top: 2.5rem;
+			gap: 2rem 1rem;
+		}
+	}
+}
