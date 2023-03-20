@@ -876,6 +876,9 @@ select {
   .promo__header-block {
     margin: 0 auto;
   }
+  .promo__header-block > .promo__subheader {
+    margin: 0 auto;
+  }
   .promo__line {
     width: 9.3rem;
     height: 0.2rem;

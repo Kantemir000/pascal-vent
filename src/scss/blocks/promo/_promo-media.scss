@@ -57,6 +57,9 @@
 		&__header-block {
 			margin: 0 auto;
 		}
+		&__header-block > &__subheader {
+			margin: 0 auto;
+		}
 		&__line {
 			width: 9.3rem;
 			height: 0.2rem;
