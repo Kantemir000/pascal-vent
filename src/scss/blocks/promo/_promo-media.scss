@@ -4,7 +4,7 @@
 			margin-top: 4.5rem;
 		}
 		&__wrapper-info {
-			max-width: 45rem;
+			width: 44.2rem;
 			padding: 14.8rem 0 0 0;
 		}
 		&__descr-block {
@@ -16,7 +16,7 @@
 	}
 }
 
-@media (max-width: 768px) or ((max-width: 1024px) and (orientation: portrait)) {
+@media (orientation: portrait) {
 	.promo {
 		height: auto;
 		background: linear-gradient(
@@ -40,8 +40,8 @@
 			transform: rotate(90deg);
 		}
 		&__wrapper-info {
-			padding: 14.8rem 0 83vmin 0;
 			margin: 0 auto;
+			padding: 14.8rem 0 83vmin 0;
 		}
 	}
 }
@@ -50,12 +50,12 @@
 	.promo {
 		height: auto;
 		&__wrapper-info {
+			width: auto;
 			max-width: 32rem;
 			padding: 14.8rem 0 83vmin 0;
 		}
 		&__header-block {
 			margin: 0 auto;
-			max-width: 28.7rem;
 		}
 		&__line {
 			width: 9.3rem;
@@ -87,9 +87,6 @@
 		&__wrapper-info {
 			max-width: 28rem;
 			padding: 13rem 0 85vmin 0;
-		}
-		&__header-block {
-			max-width: 25.4rem;
 		}
 		&__line {
 			width: 8.3rem;

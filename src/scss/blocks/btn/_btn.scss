@@ -21,7 +21,11 @@
 		background-color: var(--color-btn-disabled);
 	}
 	&:active {
+		-webkit-transform: scale(0.9);
 		transform: scale(0.9);
+	}
+	&:active &__element {
+		background-color: var(--color-btn-hover);
 	}
 
 	&__element {
@@ -44,6 +48,7 @@
 		line-height: 1;
 		letter-spacing: 0.04em;
 		transition: 0.5s all;
+		transform: translateZ(0);
 		cursor: pointer;
 	}
 	&__burger-container {
