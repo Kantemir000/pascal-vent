@@ -9,22 +9,23 @@
 @media (max-width: 992px) {
 	.btn {
 		&_burger,
-		&_submit {
-			display: flex;
+		&_leave {
+			display: inline-flex;
 		}
 		&__element {
-			padding: 3.2rem;
+			padding: 3.2rem 10.4rem;
 		}
 	}
 }
 
 @media (max-width: 576px) {
 	.btn {
-		&_submit {
+		&_leave {
+			width: 100%;
 			border-radius: 3rem;
 		}
 		&__element {
-			padding: 2.4rem 3rem;
+			padding: 2rem 3rem;
 			border-radius: 2rem;
 			letter-spacing: unset;
 		}
@@ -42,14 +43,6 @@
 		}
 		&__burger-icon {
 			height: 1.5rem;
-		}
-	}
-}
-
-@media (any-hover: hover) {
-	.btn {
-		&:hover &__element {
-			background-color: var(--color-btn-hover);
 		}
 	}
 }

@@ -27,10 +27,6 @@
 		margin-top: 6.3rem;
 	}
 	&__wrapper-info {
-		width: 52.4rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: start;
 		padding: 16.7rem 0 6.4rem 0;
 	}
 	&__header-block {
@@ -41,10 +37,10 @@
 		align-items: start;
 	}
 	&__subheader-block {
-		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: start;
 		align-items: center;
+		gap: 4.98rem;
 	}
 
 	&__subheader {
@@ -68,9 +64,10 @@
 	}
 
 	&__descr-block {
+		width: 52.4rem;
 		margin-top: 2rem;
 		display: flex;
-		justify-content: space-between;
+		justify-content: start;
 		align-items: start;
 	}
 	&__descr {
@@ -84,11 +81,11 @@
 	}
 
 	&__contacts {
+		width: 52.4rem;
 		margin-top: 5rem;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		flex-flow: wrap;
 	}
 	&__gps-block,
 	&__tel-block {

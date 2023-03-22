@@ -4,14 +4,18 @@
 			margin-top: 4.5rem;
 		}
 		&__wrapper-info {
-			width: 44.2rem;
-			padding: 14.8rem 0 0 0;
+			padding: 14.8rem 0 6.4rem 0;
 		}
 		&__descr-block {
+			width: 44.2rem;
 			margin-top: 3rem;
 		}
 		&__contacts {
+			width: 44.2rem;
 			margin-top: 4.6rem;
+		}
+		&__subheader-block {
+			gap: 1.98rem;
 		}
 	}
 }
@@ -40,8 +44,14 @@
 			transform: rotate(90deg);
 		}
 		&__wrapper-info {
-			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 			padding: 14.8rem 0 83vmin 0;
+		}
+		&__subheader-block,
+		&__subheader {
+			margin: 0 auto;
 		}
 	}
 }
@@ -50,7 +60,7 @@
 	.promo {
 		height: auto;
 		&__wrapper-info {
-			width: auto;
+			margin: 0 auto;
 			max-width: 32rem;
 			padding: 14.8rem 0 83vmin 0;
 		}
@@ -64,7 +74,15 @@
 			width: 9.3rem;
 			height: 0.2rem;
 		}
+		&__subheader-block {
+			gap: 1.85rem;
+		}
+		&__descr-block {
+			width: auto;
+		}
 		&__contacts {
+			width: auto;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			gap: 3.3rem 1rem;
 		}
@@ -93,6 +111,9 @@
 		}
 		&__line {
 			width: 8.3rem;
+		}
+		&__subheader-block {
+			gap: 1.26rem;
 		}
 		&__dots {
 			height: 0.8rem;

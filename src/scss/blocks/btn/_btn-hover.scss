@@ -1,0 +1,7 @@
+@media (any-hover: hover) {
+	.btn {
+		&:hover &__element {
+			background-color: var(--color-btn-hover);
+		}
+	}
+}

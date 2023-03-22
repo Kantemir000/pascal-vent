@@ -54,6 +54,7 @@ gulp.task("copy-html", () => {
 gulp.task("build-sass", () => {
   return gulp.src("./src/scss/**/*.scss")
     .pipe(sass().on('error', sass.logError))
+    .pipe(rename({ suffix: '.min', prefix: '' }))
     .pipe(gulp.dest(dist + '/css'))
     .pipe(browsersync.stream());
 });
