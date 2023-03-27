@@ -1,17 +1,17 @@
 .btn {
 	display: inline-flex;
-	background: rgba(120, 192, 129, 0.25);
+	background: var(--color-btn-border-dark);
 	border-radius: 4rem;
 	transition: 0.7s all;
 	-webkit-tap-highlight-color: transparent;
 	cursor: pointer;
 	&_connect {
-		background-color: rgba(255, 255, 255, 0.45);
+		background-color: var(--color-btn-border-light);
 		border-radius: 2rem;
 	}
 	&_burger {
 		display: none;
-		background-color: rgba(255, 255, 255, 0.45);
+		background-color: var(--color-btn-border-light);
 		border-radius: 2rem;
 	}
 	&_post {
@@ -51,7 +51,7 @@
 		transform: translateZ(0);
 		cursor: pointer;
 	}
-	&__burger-container {
+	&__burger-icon-container {
 		margin: 1rem;
 		padding: 1.7rem 1.2rem;
 		display: flex;

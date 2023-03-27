@@ -1,5 +1,7 @@
 :root {
 	--color-main: #d9fadd;
+	--color-line: #78c081;
+	--color-elem: #fff;
 	--color-text-btn: #fff;
 	--color-text-picture: #fff;
 	--color-text-contact: #7b897d;
@@ -13,6 +15,10 @@
 	--color-btn-enabled: #5ccd6a;
 	--color-btn-disabled: #9cd3a3;
 	--color-btn-hover: #54e165;
+	--color-btn-border-light: rgba(255, 255, 255, 0.45);
+	--color-btn-border-dark: rgba(120, 192, 129, 0.25);
+
+	--color-tab-noactive: #7ca281;
 
 	--font-size-title-xxxxl: 6.4rem;
 	--font-size-title-xxxl: 4.5rem;

@@ -1,0 +1,11 @@
+.services {
+	position: relative;
+	&__inner {
+		min-height: 85.5rem;
+		padding: 10rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		//column-gap: 18.5rem;
+	}
+}

@@ -1,0 +1,24 @@
+.info {
+	width: 44.4rem;
+	&__title::after {
+		content: "";
+		position: absolute;
+		left: calc(var(--font-size-title-xxxl) * 4.45);
+		bottom: calc(var(--font-size-title-xxxl) * 0.55);
+		width: calc(var(--font-size-title-xxxl) * 5.5);
+		height: 0.2rem;
+		background-color: var(--color-line);
+		border-radius: 0.15rem;
+	}
+	&__descr-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2.2rem;
+		gap: 2.5rem;
+	}
+	&__descr {
+		font-size: var(--font-size-descr-m);
+		line-height: calc(var(--font-size-descr-m) + 1rem);
+		color: var(--color-paragraph);
+	}
+}

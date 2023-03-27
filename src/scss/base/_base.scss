@@ -23,8 +23,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul/* [class] */,
+ol/* [class] */,
 li,
 figure,
 figcaption,
@@ -56,7 +56,7 @@ a:not([class]) {
 
 /* Упрощаем работу с изображениями */
 img {
-	max-width: 100%;
+	//max-width: 100%;
 	display: block;
 }
 

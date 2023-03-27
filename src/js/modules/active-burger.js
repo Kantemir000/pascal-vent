@@ -1,4 +1,4 @@
-const active = (parentTriggerSelector, triggerSelector, elementSelector, working) => {
+const activeBurger = (parentTriggerSelector, triggerSelector, elementSelector, working) => {
     const parent = document.querySelector(parentTriggerSelector);
 
     const eventHandler = e => {
@@ -7,13 +7,13 @@ const active = (parentTriggerSelector, triggerSelector, elementSelector, working
             { target } = e;
 
         if (target && target.closest(triggerSelector)) {
-            if (!elem.classList.contains('active')) {
+            if (!elem.classList.contains('show')) {
                 document.documentElement.style.setProperty(animation, 'fadeIn');
-                elem.classList.add('active');
+                elem.classList.add('show');
                 return;
             }
             document.documentElement.style.setProperty(animation, 'fadeOut');
-            elem.addEventListener("animationend", () => elem.classList.remove('active'), { once: true });
+            elem.addEventListener("animationend", () => elem.classList.remove('show'), { once: true });
         }
     };
 
@@ -33,4 +33,4 @@ const active = (parentTriggerSelector, triggerSelector, elementSelector, working
     });
 };
 
-export default active;
+export default activeBurger;

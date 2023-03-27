@@ -1,6 +1,10 @@
-.active {
+.show {
 	display: flex;
 }
+.hide {
+	display: none;
+}
+
 .ripple {
 	position: absolute;
 	background: #fff;

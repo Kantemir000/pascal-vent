@@ -8,6 +8,7 @@
 @import "base/container";
 @import "base/animations";
 
+@import "blocks/title/title";
 @import "blocks/btn/btn-hover";
 @import "blocks/btn/btn";
 @import "blocks/btn/btn-media";
@@ -19,5 +20,8 @@
 @import "blocks/menu/menu-media";
 @import "blocks/promo/promo";
 @import "blocks/promo/promo-media";
+@import "blocks/services/services";
+@import "blocks/info/info";
+@import "blocks/bar/bar";
 
 @import "base/general";

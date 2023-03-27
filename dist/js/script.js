@@ -2,17 +2,17 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/modules/active.js":
-/*!**********************************!*\
-  !*** ./src/js/modules/active.js ***!
-  \**********************************/
+/***/ "./src/js/modules/active-burger.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/active-burger.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const active = (parentTriggerSelector, triggerSelector, elementSelector, working) => {
+const activeBurger = (parentTriggerSelector, triggerSelector, elementSelector, working) => {
   const parent = document.querySelector(parentTriggerSelector);
   const eventHandler = e => {
     const elem = document.querySelector(elementSelector);
@@ -21,13 +21,13 @@ const active = (parentTriggerSelector, triggerSelector, elementSelector, working
         target
       } = e;
     if (target && target.closest(triggerSelector)) {
-      if (!elem.classList.contains('active')) {
+      if (!elem.classList.contains('show')) {
         document.documentElement.style.setProperty(animation, 'fadeIn');
-        elem.classList.add('active');
+        elem.classList.add('show');
         return;
       }
       document.documentElement.style.setProperty(animation, 'fadeOut');
-      elem.addEventListener("animationend", () => elem.classList.remove('active'), {
+      elem.addEventListener("animationend", () => elem.classList.remove('show'), {
         once: true
       });
     }
@@ -47,7 +47,56 @@ const active = (parentTriggerSelector, triggerSelector, elementSelector, working
     parent.removeEventListener('click', eventHandler);
   });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (active);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (activeBurger);
+
+/***/ }),
+
+/***/ "./src/js/modules/active-tabs.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/active-tabs.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const activeTabs = (parentTabsSelector, tabsSelector, сontentSelector, activeSelector) => {
+  const tabsParent = document.querySelector(parentTabsSelector),
+    tabs = tabsParent.querySelectorAll(tabsSelector),
+    contents = document.querySelectorAll(сontentSelector);
+  const hide = () => {
+    contents.forEach(content => {
+      content.classList.remove('show');
+      content.classList.add('hide');
+    });
+    tabs.forEach(tab => {
+      tab.classList.remove(activeSelector);
+    });
+  };
+  hide();
+  const show = function () {
+    let i = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : tabs.length - 1;
+    contents[i].classList.remove('hide');
+    contents[i].classList.add('show');
+    tabs[i].classList.add(activeSelector);
+  };
+  show();
+  tabsParent.addEventListener('click', e => {
+    const {
+      target
+    } = e;
+    if (target && target.closest(tabsSelector)) {
+      tabs.forEach((tab, i) => {
+        if (target.closest(tabsSelector).getAttribute("data-tab") === tab.getAttribute("data-tab")) {
+          hide();
+          show(i);
+        }
+      });
+    }
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (activeTabs);
 
 /***/ }),
 
@@ -160,15 +209,18 @@ var __webpack_exports__ = {};
   !*** ./src/js/main.js ***!
   \************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_active__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/active */ "./src/js/modules/active.js");
+/* harmony import */ var _modules_active_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/active-burger */ "./src/js/modules/active-burger.js");
 /* harmony import */ var _modules_ripple_effect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/ripple-effect */ "./src/js/modules/ripple-effect.js");
+/* harmony import */ var _modules_active_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/active-tabs */ "./src/js/modules/active-tabs.js");
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  (0,_modules_active__WEBPACK_IMPORTED_MODULE_0__["default"])('body', '.btn_burger', '.menu', true);
-  (0,_modules_active__WEBPACK_IMPORTED_MODULE_0__["default"])('.menu__items', '.menu__link', '.menu');
+  (0,_modules_active_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('body', '.btn_burger', '.menu', true);
+  (0,_modules_active_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('.menu__items', '.menu__link', '.menu');
   (0,_modules_ripple_effect__WEBPACK_IMPORTED_MODULE_1__["default"])('body', '.btn__element', true);
   (0,_modules_ripple_effect__WEBPACK_IMPORTED_MODULE_1__["default"])('.menu__items', '.menu__link');
+  (0,_modules_active_tabs__WEBPACK_IMPORTED_MODULE_2__["default"])('.bar__tabs', '.bar__tab', '.bar__inner', 'bar__tab_active');
 });
 })();
 

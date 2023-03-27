@@ -1,0 +1,39 @@
+.title {
+	text-rendering: optimizeLegibility;
+	position: relative;
+	font-family: "Ruberoid", sans-serif;
+	text-transform: capitalize;
+	font-weight: 400;
+	&_light {
+		color: var(--color-title-light);
+	}
+	&_dark {
+		color: var(--color-title-dark);
+	}
+	&_xl {
+		font-size: var(--font-size-title-xxxxl);
+		line-height: calc(var(--font-size-title-xxxxl) + 1rem);
+	}
+	&_l {
+		font-size: var(--font-size-title-xxxl);
+		line-height: calc(var(--font-size-title-xxxl) + 1.5rem);
+	}
+	&_m {
+		font-size: var(--font-size-title-xxl);
+		line-height: calc(var(--font-size-title-xxl) + 1rem);
+	}
+	&_s {
+		font-size: var(--font-size-title-xl);
+		line-height: calc(var(--font-size-title-xl) + 1rem);
+	}
+	&_s > span {
+		font-size: calc(var(--font-size-title-xl) - 2rem);
+	}
+	&_main {
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+	&_transform_none {
+		text-transform: none;
+	}
+}
