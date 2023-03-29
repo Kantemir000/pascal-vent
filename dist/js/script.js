@@ -100,6 +100,38 @@ const activeTabs = (parentTabsSelector, tabsSelector, сontentSelector, activeSe
 
 /***/ }),
 
+/***/ "./src/js/modules/container.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/container.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const container = () => {
+  const setMargin = () => {
+    const mainContainer = document.querySelector('[data-container="main"]'),
+      myContainer = document.querySelector('[data-container="services"]');
+    const marginL = window.getComputedStyle(mainContainer).marginLeft;
+    if (window.matchMedia('(max-width: 992px) or (orientation: portrait)').matches) {
+      myContainer.classList.remove('container-left');
+      myContainer.classList.add('container');
+      myContainer.style.marginLeft = "auto";
+    } else {
+      myContainer.classList.remove('container');
+      myContainer.classList.add('container-left');
+      myContainer.style.marginLeft = marginL;
+    }
+  };
+  setMargin();
+  window.addEventListener('resize', setMargin);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (container);
+
+/***/ }),
+
 /***/ "./src/js/modules/ripple-effect.js":
 /*!*****************************************!*\
   !*** ./src/js/modules/ripple-effect.js ***!
@@ -212,10 +244,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_active_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/active-burger */ "./src/js/modules/active-burger.js");
 /* harmony import */ var _modules_ripple_effect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/ripple-effect */ "./src/js/modules/ripple-effect.js");
 /* harmony import */ var _modules_active_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/active-tabs */ "./src/js/modules/active-tabs.js");
+/* harmony import */ var _modules_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/container */ "./src/js/modules/container.js");
+
 
 
 
 window.addEventListener('DOMContentLoaded', () => {
+  (0,_modules_container__WEBPACK_IMPORTED_MODULE_3__["default"])();
   (0,_modules_active_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('body', '.btn_burger', '.menu', true);
   (0,_modules_active_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('.menu__items', '.menu__link', '.menu');
   (0,_modules_ripple_effect__WEBPACK_IMPORTED_MODULE_1__["default"])('body', '.btn__element', true);

@@ -1,0 +1,9 @@
+@media (orientation: portrait) or (max-width: 992px) {
+	.services {
+		padding: 7rem 0;
+		&__inner {
+			justify-content: center;
+			gap: 3rem;
+		}
+	}
+}

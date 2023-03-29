@@ -1,7 +1,6 @@
 .bar {
+	position: relative;
 	width: 67.6rem;
-	position: absolute;
-	right: 0;
 	&__tabs {
 		display: flex;
 		justify-content: center;
@@ -9,7 +8,7 @@
 		position: absolute;
 		transform: rotate(-90deg);
 		right: 47rem;
-		top: 43.5%;
+		top: 44%;
 		background: #d9fadd;
 		border-radius: 4.5rem 4.5rem 0 0;
 		padding: 1rem 1rem 0 1rem;
@@ -60,11 +59,12 @@
 		display: flex;
 		justify-content: space-between;
 		column-gap: 4rem;
-		border-radius: 6.5rem 0px 0px 6.5rem;
+		border-radius: 6.5rem 0 0 6.5rem;
 		background: var(--color-main);
+		//animation: fadeIn 0.3s linear;
 	}
 	&__items {
-		margin: 11.4rem 0 0 9rem;
+		margin: 11.4rem 0 0 8.9rem;
 		display: flex;
 		flex-direction: column;
 		align-items: start;
