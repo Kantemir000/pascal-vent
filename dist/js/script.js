@@ -100,6 +100,35 @@ const activeTabs = (parentTabsSelector, tabsSelector, сontentSelector, activeSe
 
 /***/ }),
 
+/***/ "./src/js/modules/change-color-nav-bar.js":
+/*!************************************************!*\
+  !*** ./src/js/modules/change-color-nav-bar.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const changeColorNavBar = () => {
+  const changeColor = () => {
+    const section = document.querySelector('.promo'),
+      navBar = document.querySelector('.header'),
+      btn = document.querySelector('.btn_connect');
+    if (section.offsetHeight <= window.pageYOffset) {
+      navBar.classList.add('header_active');
+      btn.classList.add('btn_border_dark');
+    } else {
+      navBar.classList.remove('header_active');
+      btn.classList.remove('btn_border_dark');
+    }
+  };
+  window.addEventListener('scroll', changeColor);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (changeColorNavBar);
+
+/***/ }),
+
 /***/ "./src/js/modules/container.js":
 /*!*************************************!*\
   !*** ./src/js/modules/container.js ***!
@@ -115,7 +144,7 @@ const container = () => {
     const mainContainer = document.querySelector('[data-container="main"]'),
       myContainer = document.querySelector('[data-container="services"]');
     const marginL = window.getComputedStyle(mainContainer).marginLeft;
-    if (window.matchMedia('(max-width: 992px) or (orientation: portrait)').matches) {
+    if (window.matchMedia('(max-width: 992px), (orientation: portrait)').matches) {
       myContainer.classList.remove('container-left');
       myContainer.classList.add('container');
       myContainer.style.marginLeft = "auto";
@@ -245,12 +274,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_ripple_effect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/ripple-effect */ "./src/js/modules/ripple-effect.js");
 /* harmony import */ var _modules_active_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/active-tabs */ "./src/js/modules/active-tabs.js");
 /* harmony import */ var _modules_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/container */ "./src/js/modules/container.js");
+/* harmony import */ var _modules_change_color_nav_bar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/change-color-nav-bar */ "./src/js/modules/change-color-nav-bar.js");
+
 
 
 
 
 window.addEventListener('DOMContentLoaded', () => {
   (0,_modules_container__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_modules_change_color_nav_bar__WEBPACK_IMPORTED_MODULE_4__["default"])();
   (0,_modules_active_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('body', '.btn_burger', '.menu', true);
   (0,_modules_active_burger__WEBPACK_IMPORTED_MODULE_0__["default"])('.menu__items', '.menu__link', '.menu');
   (0,_modules_ripple_effect__WEBPACK_IMPORTED_MODULE_1__["default"])('body', '.btn__element', true);

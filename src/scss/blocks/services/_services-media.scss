@@ -1,4 +1,4 @@
-@media (orientation: portrait) or (max-width: 992px) {
+@media (orientation: portrait), (max-width: 992px) {
 	.services {
 		padding: 7rem 0;
 		&__inner {

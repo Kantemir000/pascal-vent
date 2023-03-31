@@ -9,6 +9,9 @@
 		background-color: var(--color-btn-border-light);
 		border-radius: 2rem;
 	}
+	&_border_dark {
+		background: var(--color-btn-border-dark);
+	}
 	&_burger {
 		display: none;
 		background-color: var(--color-btn-border-light);

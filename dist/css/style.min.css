@@ -588,6 +588,9 @@ select {
   background-color: var(--color-btn-border-light);
   border-radius: 2rem;
 }
+.btn_border_dark {
+  background: var(--color-btn-border-dark);
+}
 .btn_burger {
   display: none;
   background-color: var(--color-btn-border-light);
@@ -701,6 +704,10 @@ select {
   align-items: center;
   border-radius: 0 0 7rem 7rem;
   z-index: 100;
+  transition: 0.5s all;
+}
+.header_active {
+  background-color: var(--color-main);
 }
 
 @media (max-width: 576px) {
@@ -764,7 +771,7 @@ select {
     background: var(--color-main);
     border-radius: 3rem;
     z-index: -1;
-    animation: var(--animation-burger) 0.6s linear;
+    animation: var(--animation-burger) 0.4s linear;
   }
   .menu__items {
     width: 100%;
@@ -806,16 +813,12 @@ select {
   z-index: -1;
   background: url("../img/bitmaps/bg/conditioner.webp") 44.5vw center/cover no-repeat;
 }
-.promo__title {
-  text-align: end;
-}
-.promo__title::after {
-  content: "";
-  position: absolute;
-  right: calc(var(--font-size-title-xxxxl) * 5.6);
-  bottom: calc(var(--font-size-title-xxxxl) * 0.55);
-  width: calc(var(--font-size-title-xxxxl) * 2.5);
+.promo__title-line {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 2.5em;
   height: 0.3rem;
+  margin-right: 0.3em;
   background-color: var(--color-line);
   border-radius: 0.15rem;
 }
@@ -893,7 +896,7 @@ select {
     margin-top: 4.6rem;
   }
 }
-@media (orientation: portrait) or (max-width: 992px) {
+@media (orientation: portrait), (max-width: 992px) {
   .promo {
     height: auto;
     background: linear-gradient(270deg, #f2f2f2 0.09%, #f0f2f1 17.41%, #efefef 35.53%, #eaeceb 51.42%, #e7e8ea 68.94%, #e2e6e5 82.21%, #dee2e1 99.91%), center center/contain no-repeat;
@@ -975,7 +978,7 @@ select {
   gap: 7rem;
 }
 
-@media (orientation: portrait) or (max-width: 992px) {
+@media (orientation: portrait), (max-width: 992px) {
   .services {
     padding: 7rem 0;
   }
@@ -987,13 +990,12 @@ select {
 .info {
   width: 44.4rem;
 }
-.info__title::after {
-  content: "";
-  position: absolute;
-  left: calc(var(--font-size-title-xxxl) * 4.45);
-  bottom: calc(var(--font-size-title-xxxl) * 0.55);
-  width: calc(var(--font-size-title-xxxl) * 5.5);
+.info__title-line {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 5.5em;
   height: 0.2rem;
+  margin-left: 0.4em;
   background-color: var(--color-line);
   border-radius: 0.15rem;
 }
@@ -1012,6 +1014,9 @@ select {
 @media (max-width: 576px) {
   .info {
     width: 31.9rem;
+  }
+  .info__title::after {
+    bottom: 2.1rem;
   }
   .info__descr-wrapper {
     margin-top: 2rem;

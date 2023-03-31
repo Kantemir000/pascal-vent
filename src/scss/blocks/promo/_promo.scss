@@ -23,18 +23,14 @@
 		background: url("../img/bitmaps/bg/conditioner.webp") 44.5vw
 			center/cover no-repeat;
 	}
-	&__title {
-		text-align: end;
-		&::after {
-			content: "";
-			position: absolute;
-			right: calc(var(--font-size-title-xxxxl) * 5.6);
-			bottom: calc(var(--font-size-title-xxxxl) * 0.55);
-			width: calc(var(--font-size-title-xxxxl) * 2.5);
-			height: 0.3rem;
-			background-color: var(--color-line);
-			border-radius: 0.15rem;
-		}
+	&__title-line {
+		display: inline-flex;
+		vertical-align: middle;
+		width: 2.5em;
+		height: 0.3rem;
+		margin-right: 0.3em;
+		background-color: var(--color-line);
+		border-radius: 0.15rem;
 	}
 	&__btn {
 		margin-top: 6.3rem;

@@ -16,7 +16,7 @@
 	}
 }
 
-@media (orientation: portrait) or (max-width: 992px) {
+@media (orientation: portrait), (max-width: 992px) {
 	.promo {
 		height: auto;
 		background: linear-gradient(

@@ -1,6 +1,9 @@
 @media (max-width: 576px) {
 	.info {
 		width: 31.9rem;
+		&__title::after {
+			bottom: 2.1rem;
+		}
 		&__descr-wrapper {
 			margin-top: 2rem;
 			gap: 2rem;
