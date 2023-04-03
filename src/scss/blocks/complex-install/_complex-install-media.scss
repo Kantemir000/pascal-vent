@@ -1,0 +1,128 @@
+@media (max-width: 1024px) {
+	.complex-install {
+		background: none;
+		&::after,
+		&::before {
+			left: 0;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.complex-install {
+		background: url("../img/svg/bg/full-construction/leaves1.svg") -14rem 37rem/75rem
+			repeat-x;
+		&::before {
+			background: url("../img/svg/bg/full-construction/leaves2.svg") 17rem
+				20.5rem/77rem repeat-x;
+		}
+		&::after {
+			background: url("../img/svg/bg/full-construction/leaves2.svg") 0
+				8rem/70rem repeat-x;
+			transform: rotate(180deg);
+		}
+		&__title {
+			margin: 0 auto;
+			width: 12.4em;
+		}
+		&__title-line {
+			display: none;
+		}
+		&__title-line_mobile {
+			display: inline-flex;
+			width: 3.9em;
+		}
+		&__cards {
+			margin-top: 5.6rem;
+			justify-content: center;
+			grid-template-columns: repeat(auto-fit, minmax(15.2rem, 1fr));
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.complex-install {
+		background: none;
+		&::before {
+			top: 19rem;
+			left: -15rem;
+			background: url("../img/svg/bg/full-construction/leaves1-mobile.svg")
+				center 0/19rem no-repeat;
+		}
+		&::after {
+			top: -6rem;
+			left: 15rem;
+			background: url("../img/svg/bg/full-construction/leaves1-mobile.svg")
+				center 0rem/19rem no-repeat;
+			transform: scaleX(-1) rotate(180deg);
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.complex-install {
+		&::before {
+			top: 0rem;
+			left: -13rem;
+			background: url("../img/svg/bg/full-construction/leaves1-mobile.svg")
+				center 15rem/18rem no-repeat;
+		}
+		&::after {
+			top: 0;
+			left: 13rem;
+			background: url("../img/svg/bg/full-construction/leaves1-mobile.svg")
+				center 2rem/18rem no-repeat;
+			transform: scaleX(-1) rotate(180deg);
+		}
+		&__title-line {
+			height: 0.2rem;
+		}
+		&__inner {
+			padding-bottom: 7rem;
+		}
+		&__cards {
+			padding: 0 2.8rem;
+			gap: 2rem 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.complex-install {
+		&::before {
+			top: -3rem;
+			left: -10rem;
+			background: url("../img/svg/bg/full-construction/leaves2-mobile.svg")
+				center 0rem/19rem no-repeat;
+			transform: scaleX(-1) rotate(180deg);
+		}
+		&::after {
+			top: 14rem;
+			left: 10rem;
+			background: url("../img/svg/bg/full-construction/leaves2-mobile.svg")
+				center 0/19rem no-repeat;
+			transform: unset;
+		}
+		&__cards {
+			grid-auto-rows: minmax(19.3rem, auto);
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.complex-install {
+		&::before {
+			top: 5rem;
+			background: url("../img/svg/bg/full-construction/leaves2-mobile.svg")
+				center 43rem/19rem repeat-y;
+		}
+		&::after {
+			top: 3rem;
+			background: url("../img/svg/bg/full-construction/leaves2-mobile.svg")
+				center 41rem/19rem repeat-y;
+		}
+		&__cards {
+			margin-top: 2.6rem;
+		}
+	}
+}

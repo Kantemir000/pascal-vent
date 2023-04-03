@@ -5,7 +5,7 @@ const container = () => {
 
         const marginL = window.getComputedStyle(mainContainer).marginLeft;
 
-        if (window.matchMedia('(max-width: 992px), (orientation: portrait)').matches) {
+        if (window.matchMedia('(max-width: 992px)').matches) {
             myContainer.classList.remove('container-left');
             myContainer.classList.add('container');
 

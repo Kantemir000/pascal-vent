@@ -1,0 +1,42 @@
+.card {
+	position: relative;
+	filter: drop-shadow(0 0 1rem rgba(73, 93, 76, 0.1));
+	&__img {
+		width: 100%;
+		height: 9.2rem;
+		object-fit: cover;
+		border-radius: 2.5rem 2.5rem 0 0;
+	}
+	&__price {
+		position: absolute;
+		top: 1.5rem;
+		left: 0;
+		padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+		background-color: var(--color-main);
+		border-radius: 0 1rem 1rem 0;
+		z-index: 1;
+
+		font-weight: 600;
+		font-size: var(--font-size-item-m);
+		line-height: 1.1em;
+		color: var(--color-descr-dark);
+	}
+	&__place {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		min-height: 4.3rem;
+		padding: 0 3.7rem 0 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		background: var(--color-elem);
+		backdrop-filter: blur(0.1rem);
+
+		font-weight: 400;
+		font-size: var(--font-size-item-l);
+		line-height: 1.3125em;
+		color: var(--color-title-light);
+		border-radius: 0 0 2.5rem 2.5rem;
+	}
+}

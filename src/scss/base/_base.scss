@@ -11,8 +11,8 @@ html {
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul/* [class] */,
+ol/* [class] */ {
 	padding: 0;
 }
 

@@ -1,0 +1,6 @@
+@mixin line {
+	display: inline-flex;
+	vertical-align: middle;
+	background-color: var(--color-line);
+	border-radius: 0.15rem;
+}

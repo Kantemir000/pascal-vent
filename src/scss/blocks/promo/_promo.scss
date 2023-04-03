@@ -24,13 +24,10 @@
 			center/cover no-repeat;
 	}
 	&__title-line {
-		display: inline-flex;
-		vertical-align: middle;
+		@include line;
 		width: 2.5em;
 		height: 0.3rem;
 		margin-right: 0.3em;
-		background-color: var(--color-line);
-		border-radius: 0.15rem;
 	}
 	&__btn {
 		margin-top: 6.3rem;

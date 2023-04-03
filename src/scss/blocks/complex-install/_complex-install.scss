@@ -1,0 +1,57 @@
+.complex-install {
+	position: relative;
+	overflow: hidden;
+	background: url("../img/svg/bg/full-construction/lungs.svg") 0 54%/24.8rem
+		no-repeat;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 25rem;
+		width: 100%;
+		height: 100%;
+		background: url("../img/svg/bg/full-construction/leaves2.svg") 15.5rem
+			31rem/102.6rem repeat-x;
+		z-index: -1;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 25rem;
+		width: 100%;
+		height: 100%;
+		background: url("../img/svg/bg/full-construction/leaves1.svg") 6rem
+			12.5rem/102.6rem repeat-x;
+		z-index: -1;
+	}
+	&__inner {
+		padding-bottom: 10rem;
+	}
+	&__title {
+		width: 20em;
+	}
+	&__title-line {
+		@include line;
+		width: 5.4em;
+		height: 0.3rem;
+		margin-left: 0.3em;
+	}
+	&__title-line_mobile {
+		display: none;
+	}
+	&__cards {
+		margin-top: 8.5rem;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(19.7rem, 1fr));
+		grid-auto-rows: minmax(13.5rem, auto);
+		gap: 3.5rem 4.5rem;
+	}
+	&__cards {
+		margin-top: 8.5rem;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(19.7rem, 1fr));
+		grid-auto-rows: minmax(13.5rem, auto);
+		gap: 3.5rem 4.5rem;
+	}
+}

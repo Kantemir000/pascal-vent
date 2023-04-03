@@ -1,13 +1,10 @@
 .info {
 	width: 44.4rem;
 	&__title-line {
-		display: inline-flex;
-		vertical-align: middle;
+		@include line;
 		width: 5.5em;
 		height: 0.2rem;
 		margin-left: 0.4em;
-		background-color: var(--color-line);
-		border-radius: 0.15rem;
 	}
 	&__descr-wrapper {
 		display: flex;
