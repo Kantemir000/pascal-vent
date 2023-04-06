@@ -52,7 +52,7 @@
 		font-size: var(--font-size-descr-xl);
 		line-height: calc(var(--font-size-descr-xl) + 1rem);
 		color: var(--color-descr-light);
-		text-rendering: optimizeLegibility;
+
 		font-weight: 400;
 	}
 	&__dots {
@@ -88,7 +88,7 @@
 		line-height: 1.5;
 		color: var(--color-text-contact);
 		text-decoration: none;
-		text-rendering: optimizeLegibility;
+
 		font-weight: 400;
 	}
 }

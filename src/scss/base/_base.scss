@@ -39,7 +39,7 @@ body {
 	user-select: none;
 	min-height: 100vh;
 	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
+	text-rendering: optimizeLegibility;
 	line-height: 1.5;
 }
 
@@ -74,11 +74,11 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
 	* {
 		animation-duration: 0.01ms !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
-}
+} */

@@ -23,7 +23,8 @@
 		}
 		&__title {
 			margin: 0 auto;
-			width: 12.4em;
+			max-width: 12.5em;
+			text-align: center;
 		}
 		&__title-line {
 			display: none;

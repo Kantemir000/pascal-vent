@@ -17,7 +17,7 @@
 		font-weight: 400;
 		font-size: var(--font-size-btn-s);
 		line-height: var(--font-size-btn-s);
-		text-rendering: optimizeLegibility;
+
 		color: var(--color-tab-noactive);
 	}
 	&__tab-icon {
@@ -102,7 +102,7 @@
 		font-weight: 400;
 		font-size: var(--font-size-descr-l);
 		line-height: calc(var(--font-size-descr-l) + 1rem);
-		text-rendering: optimizeLegibility;
+
 		color: var(--color-title-dark);
 	}
 	&__img {
