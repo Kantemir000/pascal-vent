@@ -14,7 +14,7 @@
 		padding: 0.5rem 1.5rem 0.5rem 0.5rem;
 		background-color: var(--color-main);
 		border-radius: 0 1rem 1rem 0;
-		z-index: 1;
+		z-index: 0;
 
 		font-weight: 600;
 		font-size: var(--font-size-item-m);
@@ -31,7 +31,6 @@
 		align-items: center;
 		justify-content: start;
 		background: var(--color-elem);
-		backdrop-filter: blur(0.1rem);
 
 		font-weight: 400;
 		font-size: var(--font-size-item-l);
