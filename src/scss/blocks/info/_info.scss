@@ -13,8 +13,8 @@
 		gap: 2.5rem;
 	}
 	&__descr {
-		font-size: var(--font-size-descr-m);
-		line-height: calc(var(--font-size-descr-m) + 1rem);
+		font-size: var(--font-size-paragraph);
+		line-height: calc(var(--font-size-paragraph) + 1rem);
 		color: var(--color-paragraph);
 	}
 }

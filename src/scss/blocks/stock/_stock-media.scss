@@ -1,0 +1,24 @@
+@media (max-width: 1200px) {
+	.stock {
+		margin-top: 4.5rem;
+		order: 3;
+		&__list {
+			max-width: 34em;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.stock {
+		padding: 0 2.8rem;
+		margin-top: 4.5rem;
+		&__list {
+			margin: 1.2rem 0 0 3.1rem;
+		}
+		.stock__item {
+			&::before {
+				left: -3.1rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+@media (max-width: 1200px) {
+	.steps {
+		margin-top: 7rem;
+		flex-direction: column;
+		grid-column: 1;
+		gap: 2.5rem;
+		order: 2;
+		&__item {
+			&:nth-child(1) {
+				margin-left: 1.9rem;
+			}
+			&:nth-child(2) {
+				margin-left: 12.4rem;
+			}
+			&:nth-child(1):before {
+				top: -2rem;
+				left: -23.5rem;
+				width: 28rem;
+				height: 3.5rem;
+				transform: rotate(26deg) scaleY(-1);
+			}
+			&:nth-child(1):after {
+				background: url("../img/svg/air-purification/curved-arrow-mobile-1.svg")
+					center center/contain no-repeat;
+				top: 6rem;
+				left: 5.5rem;
+				width: 28rem;
+				height: 14.9rem;
+			}
+			&:nth-child(2):before {
+				background: url("../img/svg/air-purification/curved-arrow-mobile-2.svg")
+					center center/contain no-repeat;
+				top: 8rem;
+				left: -22rem;
+				width: 28rem;
+				height: 14.9rem;
+				transform: scaleY(1);
+			}
+			&:nth-child(3):before {
+				top: 8.5rem;
+				left: 10.5rem;
+				width: 28rem;
+				height: 3.5rem;
+				transform: rotate(5deg) scaleY(-1);
+			}
+		}
+		&__img-container {
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.steps {
+		margin-top: 2.5rem;
+	}
+}
+
+@media (max-width: 359px) {
+	.steps {
+		margin-top: 2.5rem;
+		&__item {
+			&:nth-child(2) {
+				margin-left: 11.4rem;
+			}
+			&:nth-child(1):before {
+				left: -25.5rem;
+			}
+			&:nth-child(1):after {
+				left: 4.5rem;
+			}
+			&:nth-child(2):before {
+				top: 7rem;
+			}
+			&:nth-child(3):before {
+				left: 9.5rem;
+			}
+		}
+		&__title {
+			margin-top: 1rem;
+		}
+	}
+}

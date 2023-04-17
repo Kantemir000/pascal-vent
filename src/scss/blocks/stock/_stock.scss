@@ -1,0 +1,27 @@
+.stock {
+	&__list {
+		font-weight: 400;
+		font-size: var(--font-size-descr-m);
+		line-height: 1.1875em;
+		color: var(--color-descr-light);
+		margin: 1.2rem 0 0 2.6rem;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	&__item {
+		position: relative;
+		&::before {
+			content: "";
+			width: 1.7rem;
+			height: 1.7rem;
+			position: absolute;
+			left: -2.7rem;
+			top: 0;
+			background: url("../img/svg/air-purification/propeller.svg") center
+				center/contain no-repeat;
+		}
+	}
+}

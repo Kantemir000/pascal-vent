@@ -7,7 +7,7 @@
 			right: 16.75rem;
 		}
 		&__inner {
-			min-height: 63rem;
+			min-height: 64.2rem;
 			padding: 3.5rem 3.2rem 3.2rem 3.2rem;
 			flex-direction: column;
 			border-radius: 5rem 0 0 5rem;
@@ -52,7 +52,7 @@
 		}
 
 		&__inner {
-			min-height: 32rem;
+			min-height: 36rem;
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
@@ -107,9 +107,11 @@
 			}
 
 			&__inner {
+				min-height: 55rem;
 				margin-top: 2.5rem;
 				flex-direction: column;
 				align-items: flex-start;
+				justify-content: space-between;
 				gap: 0;
 			}
 			&__items {

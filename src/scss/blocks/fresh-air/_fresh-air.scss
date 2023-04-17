@@ -1,0 +1,16 @@
+.fresh-air {
+	overflow: hidden;
+	&__inner {
+		padding-bottom: 10rem;
+		display: grid;
+		grid-template-columns: 52.5rem minmax(auto, 54rem);
+		justify-items: center;
+		gap: 8.4rem 9rem;
+	}
+	&__title-line {
+		@include line;
+		width: 2.35em;
+		height: 0.2rem;
+		margin-left: 0.23em;
+	}
+}

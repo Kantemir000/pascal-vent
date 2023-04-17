@@ -1,0 +1,21 @@
+@media (max-width: 1200px) {
+	.fresh-air {
+		&__inner {
+			grid-template-columns: 1fr;
+			gap: 0;
+		}
+		&__title {
+			grid-column: 1;
+			width: 11.7em;
+			order: 1;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.fresh-air {
+		&__inner {
+			padding-bottom: 7rem;
+		}
+	}
+}
