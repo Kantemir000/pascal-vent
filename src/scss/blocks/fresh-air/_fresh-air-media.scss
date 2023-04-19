@@ -1,6 +1,13 @@
 @media (max-width: 1200px) {
 	.fresh-air {
 		&__inner {
+			gap: 8.4rem 7rem;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.fresh-air {
+		&__inner {
 			grid-template-columns: 1fr;
 			gap: 0;
 		}
