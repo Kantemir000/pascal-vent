@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+	.request {
+		&__form {
+			margin-top: 3rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.request {
+		&__title {
+			max-width: 13em;
+			margin: 0 auto;
+		}
+		&__form {
+			margin-inline: auto;
+			gap: 4.5rem;
+			& > &__inputs {
+				gap: 2.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.request {
+		background: var(--color-main);
+		&::before {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 359px) {
+	.request {
+		&__title {
+			width: 11.6em;
+		}
+		&__form {
+			gap: 3.5rem;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.request {
+	position: relative;
+	padding: 5rem 0;
+	background: url("../img/svg/bg/request/propeller.svg") right 0.9rem
+			center/20.9rem 23.6rem no-repeat,
+		var(--color-main);
+	z-index: 0;
+	&::before {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		right: 16rem;
+		transform: translateY(-50%);
+		background: url("../img/svg/bg/request/wind.svg") right center/128rem
+			21.3rem repeat;
+		z-index: -1;
+	}
+	&__form {
+		margin-top: 2.4rem;
+		gap: 6rem;
+		& > .form__inputs {
+			gap: 3rem;
+		}
+	}
+}
