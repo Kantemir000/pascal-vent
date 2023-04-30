@@ -3,6 +3,7 @@ import rippleEffect from "./modules/ripple-effect";
 import activeTabs from "./modules/active-tabs";
 import container from "./modules/container";
 import changeColorNavBar from "./modules/change-color-nav-bar";
+import form from "./modules/form";
 
 window.addEventListener('DOMContentLoaded', () => {
     container();
@@ -12,4 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
     rippleEffect('body', '.btn__element', true);
     rippleEffect('.menu__items', '.menu__link');
     activeTabs('.bar__tabs', '.bar__tab', '.bar__inner', 'bar__tab_active');
+    form('.form');
 });

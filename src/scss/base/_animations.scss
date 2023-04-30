@@ -29,3 +29,15 @@
 		opacity: 0;
 	}
 }
+
+@keyframes loading {
+	0% {
+		width: 2rem;
+	}
+	50% {
+		width: 7rem;
+	}
+	100% {
+		width: 2rem;
+	}
+}
