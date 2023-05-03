@@ -3,7 +3,13 @@
 		height: 5.3rem;
 	}
 }
-
+@media (max-width: 375px) {
+	.logo {
+		&_modal {
+			display: none;
+		}
+	}
+}
 @media (max-width: 359px) {
 	.logo {
 		height: 4.5rem;

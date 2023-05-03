@@ -17,14 +17,15 @@
 		font-weight: 400;
 		font-size: var(--font-size-btn-s);
 		line-height: var(--font-size-btn-s);
-
 		color: var(--color-tab-noactive);
+		transition: 0.5s all;
 	}
 	&__tab-icon {
 		max-height: 100%;
 		width: 3.3rem;
 		transform: rotate(90deg);
 		fill: var(--color-tab-noactive);
+		transition: 0.5s all;
 	}
 	&__tab {
 		display: flex;
@@ -51,6 +52,12 @@
 		}
 		&:last-child {
 			border-radius: 0 4rem 0 0;
+		}
+		&:not(.bar__tab_active):hover > &-name {
+			color: var(--color-btn-hover);
+		}
+		&:not(.bar__tab_active):hover > &-icon {
+			fill: var(--color-btn-hover);
 		}
 	}
 

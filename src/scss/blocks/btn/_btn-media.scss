@@ -29,6 +29,19 @@
 			border-radius: 2rem;
 			letter-spacing: unset;
 		}
+		&_close > &__element {
+			width: 4.7rem;
+			height: 4.3rem;
+			border-radius: 1.5rem;
+			&::after {
+				height: 2.7rem;
+				width: 0.35rem;
+			}
+			&::before {
+				height: 0.35rem;
+				width: 2.7rem;
+			}
+		}
 	}
 }
 

@@ -1,0 +1,42 @@
+@media (max-width: 576px) {
+	.contacts {
+		&__gps-container {
+			&_promo {
+				margin-left: 1.875em;
+				&::before {
+					height: 2rem;
+					width: 1.5rem;
+					left: -1.875em;
+					background: url("../img/svg/contacts/gps.svg") center
+						center/contain no-repeat;
+				}
+			}
+		}
+		&__tel-container {
+			&_mobile {
+				display: flex;
+			}
+			&_desktop > .contacts__tel:not(:first-child) {
+				display: none;
+			}
+			&_promo {
+				margin-left: 2.25em;
+				&::before {
+					height: 2rem;
+					width: 2rem;
+					left: -2.25em;
+					background: url("../img/svg/contacts/tel.svg") center
+						center/contain no-repeat;
+				}
+			}
+		}
+		&__gps > br {
+			display: none;
+		}
+		&__line {
+			&_modal {
+				display: none;
+			}
+		}
+	}
+}

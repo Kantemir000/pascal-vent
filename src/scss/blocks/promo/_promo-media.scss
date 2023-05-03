@@ -60,23 +60,8 @@
 			margin: 0 auto;
 		}
 		&__contacts {
-			flex-wrap: wrap;
 			justify-content: space-between;
 			gap: 3.3rem 1rem;
-		}
-		&__tel-wrapper_mobile {
-			display: flex;
-		}
-		&__tel-wrapper_desktop > &__tel-info a:not(:first-child) {
-			display: none;
-		}
-		&__gps-wrapper {
-			max-width: none;
-		}
-		.promo__gps-icon,
-		.promo__tel-icon {
-			margin-right: 1.2rem;
-			height: 2rem;
 		}
 	}
 }

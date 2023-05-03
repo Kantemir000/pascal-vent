@@ -20,6 +20,8 @@
 @import "blocks/menu/menu-media";
 @import "blocks/promo/promo";
 @import "blocks/promo/promo-media";
+@import "blocks/contacts/contacts";
+@import "blocks/contacts/contacts-media";
 @import "blocks/services/services";
 @import "blocks/services/services-media";
 @import "blocks/info/info";
@@ -41,5 +43,7 @@
 @import "blocks/form/form";
 @import "blocks/form/form-media";
 @import "blocks/loading/loading";
+@import "blocks/modal/modal";
+@import "blocks/modal/modal-media";
 
 @import "base/general";

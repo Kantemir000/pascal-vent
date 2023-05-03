@@ -1,0 +1,72 @@
+.contacts {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	&__gps-container,
+	&__tel-container {
+		position: relative;
+		font-size: var(--font-size-contact);
+		line-height: 1.5;
+		&_promo,
+		&_modal {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	&__gps-container {
+		&_promo {
+			margin-left: 1.1em;
+			&::before {
+				height: 3.2rem;
+				width: 2.4rem;
+				left: -3em;
+				background: url("../img/svg/contacts/gps.svg") center
+					center/contain no-repeat;
+			}
+		}
+	}
+	&__tel-container {
+		&_mobile {
+			display: none;
+		}
+		&_promo {
+			margin-left: 3.375em;
+			&::before {
+				height: 3.2rem;
+				width: 3.2rem;
+				left: -3.375em;
+				background: url("../img/svg/contacts/tel.svg") center
+					center/contain no-repeat;
+			}
+		}
+		&_modal {
+			margin-left: 2.3125em;
+			&::before {
+				height: 2.2rem;
+				width: 2.2rem;
+				left: -2.3125em;
+				background: url("../img/svg/contacts/tel.svg") center
+					center/contain no-repeat;
+			}
+		}
+	}
+	&__gps,
+	&__tel {
+		display: flex;
+		color: var(--color-text-contact);
+		text-decoration: none;
+		font-weight: 400;
+	}
+	&__line {
+		background: var(--color-line-s);
+		border-radius: 0.05rem;
+		&_modal {
+			width: 0.1rem;
+			height: 3.9rem;
+		}
+	}
+}

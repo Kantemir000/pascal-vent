@@ -59,36 +59,8 @@
 		height: 1rem;
 		margin: 1.1rem 1.2rem 0 0;
 	}
-
 	&__contacts {
 		margin-top: 5rem;
-		display: flex;
 		justify-content: space-around;
-		align-items: center;
-	}
-	&__gps-wrapper,
-	&__tel-wrapper {
-		max-width: 20rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	&__tel-wrapper_mobile {
-		display: none;
-	}
-	&__gps-icon,
-	&__tel-icon {
-		margin-right: 2.2rem;
-		height: 3.2rem;
-	}
-	&__gps-info,
-	&__tel-info a {
-		display: flex;
-		font-size: var(--font-size-contact);
-		line-height: 1.5;
-		color: var(--color-text-contact);
-		text-decoration: none;
-
-		font-weight: 400;
 	}
 }

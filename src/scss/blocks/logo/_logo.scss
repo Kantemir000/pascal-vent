@@ -2,6 +2,12 @@
 	height: 6rem;
 	cursor: pointer;
 	z-index: -2;
+	&_modal {
+		margin-top: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	&__img {
 		height: 100%;
 	}

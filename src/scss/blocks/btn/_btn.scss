@@ -17,11 +17,17 @@
 		background-color: var(--color-btn-border-light);
 		border-radius: 2rem;
 	}
+	&_close {
+		position: absolute;
+		right: 0;
+		top: -8.4rem;
+		border-radius: 1.8rem;
+	}
+	&_modal {
+		width: 100%;
+	}
 	&_post {
 		border-radius: 2rem;
-	}
-	&:disabled &__element {
-		background-color: var(--color-btn-disabled);
 	}
 	&:active {
 		-webkit-transform: scale(0.9);
@@ -53,6 +59,9 @@
 		transition: 0.5s all;
 		transform: translateZ(0);
 		cursor: pointer;
+		&:disabled {
+			background-color: var(--color-btn-disabled);
+		}
 	}
 	&__burger-icon-container {
 		margin: 1rem;
@@ -82,5 +91,31 @@
 	}
 	&_post > &__element {
 		padding: 1.9rem 5rem;
+	}
+	&_close > &__element {
+		position: relative;
+		margin: 1rem;
+		width: 5.3rem;
+		height: 4.9rem;
+		padding: 0;
+		border-radius: 1.5rem;
+		&::after {
+			position: absolute;
+			content: "";
+			height: 3.19rem;
+			width: 0.35rem;
+			transform: rotate(45deg);
+			border-radius: 100vmax;
+			background-color: var(--color-text-btn);
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			height: 0.35rem;
+			width: 3.19rem;
+			transform: rotate(45deg);
+			border-radius: 100vmax;
+			background-color: var(--color-text-btn);
+		}
 	}
 }

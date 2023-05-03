@@ -38,6 +38,7 @@ const form = formSelector => {
                     btn.insertAdjacentHTML('beforeend', `
                         <img class="form__message" src=${message.ok} alt="checked">
                     `);
+                    btn.firstElementChild.setAttribute('disabled', 'disabled');
                     setTimeout(() => btn.lastElementChild.remove(), 3000);
                 }).catch(error => {
                     console.log(error.status);

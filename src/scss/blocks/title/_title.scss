@@ -3,11 +3,21 @@
 	font-family: "Ruberoid", sans-serif;
 	text-transform: capitalize;
 	font-weight: 400;
+	&_contacts {
+		max-width: 9em;
+	}
+	&_feedback {
+		max-width: 8em;
+	}
 	&_light {
 		color: var(--color-title-light);
 	}
 	&_dark {
 		color: var(--color-title-dark);
+	}
+	&_modal {
+		font-size: var(--font-size-title-modal);
+		line-height: calc(var(--font-size-title-modal) + 1.5rem);
 	}
 	&_xl {
 		font-size: var(--font-size-title-xxxxl);

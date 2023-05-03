@@ -2,11 +2,20 @@
 	display: flex;
 	justify-content: start;
 	align-items: center;
+	&_modal {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 3.5rem;
+	}
 	&__inputs {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+		&_modal {
+			gap: 2rem;
+		}
 	}
 	&__name,
 	&__phone {
@@ -22,6 +31,10 @@
 		box-shadow: 0 0 1.2rem rgba(73, 93, 76, 0.15);
 		border: none;
 		border-radius: 1.5rem;
+		&_modal {
+			width: 100%;
+			height: 4.9rem;
+		}
 	}
 	&__message {
 		max-width: 3rem;

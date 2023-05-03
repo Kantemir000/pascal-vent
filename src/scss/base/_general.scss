@@ -5,6 +5,15 @@
 	display: none;
 }
 
+.open {
+	display: flex;
+	overflow: hidden;
+}
+.close {
+	display: none;
+	overflow: visible;
+}
+
 .ripple {
 	position: absolute;
 	background: #fff;

@@ -1,9 +1,9 @@
-const activeBurger = (parentTriggerSelector, triggerSelector, elementSelector, working) => {
+const activeBurgerMenu = (parentTriggerSelector, triggerSelector, elementSelector, alwaysWorks) => {
     const parent = document.querySelector(parentTriggerSelector);
 
     const eventHandler = e => {
         const elem = document.querySelector(elementSelector);
-        const animation = '--animation-burger',
+        const animation = '--animation',
             { target } = e;
 
         if (target && target.closest(triggerSelector)) {
@@ -17,7 +17,7 @@ const activeBurger = (parentTriggerSelector, triggerSelector, elementSelector, w
         }
     };
 
-    if (working) {
+    if (alwaysWorks) {
         parent.addEventListener('click', eventHandler);
         return;
     }
@@ -33,4 +33,4 @@ const activeBurger = (parentTriggerSelector, triggerSelector, elementSelector, w
     });
 };
 
-export default activeBurger;
+export default activeBurgerMenu;
