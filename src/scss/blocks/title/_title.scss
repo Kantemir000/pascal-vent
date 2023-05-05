@@ -35,8 +35,24 @@
 		font-size: var(--font-size-title-xl);
 		line-height: calc(var(--font-size-title-xl) + 1rem);
 	}
-	&_s > span {
-		font-size: calc(var(--font-size-title-xl) - 2rem);
+	&_mini {
+		position: relative;
+		vertical-align: top;
+		font-size: 0.466em;
+		color: var(--color-title-light);
+		text-transform: uppercase;
+		&::before {
+			content: "Pascal vent";
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			@include line;
+			width: 7.85em;
+			height: 0.1rem;
+			top: 1.4em;
+			left: 0;
+		}
 	}
 	&_main {
 		letter-spacing: 0.03em;

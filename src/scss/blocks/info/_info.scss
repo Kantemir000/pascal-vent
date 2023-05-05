@@ -1,10 +1,18 @@
 .info {
-	width: 44.4rem;
+	max-width: 44.4rem;
+	&__title-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	&__title-line {
 		@include line;
-		width: 5.5em;
-		height: 0.2rem;
-		margin-left: 0.4em;
+		&_services {
+			width: 5.5em;
+			height: 0.2rem;
+			margin-left: 0.4em;
+		}
 	}
 	&__descr-wrapper {
 		display: flex;

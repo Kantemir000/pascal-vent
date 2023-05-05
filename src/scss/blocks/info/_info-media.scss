@@ -1,6 +1,6 @@
 @media (max-width: 576px) {
 	.info {
-		width: 31.9rem;
+		max-width: 31.9rem;
 		&__title::after {
 			bottom: 2.1rem;
 		}

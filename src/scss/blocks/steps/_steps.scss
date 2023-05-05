@@ -13,11 +13,19 @@
 		&:nth-child(1) > .steps__img-container {
 			margin: 0 15rem 0 0;
 		}
+		&:nth-child(1) > .steps__title {
+			position: relative;
+			left: -7.2rem;
+		}
 		&:nth-child(2) > .steps__img-container {
 			margin: 0 15rem 0 15rem;
 		}
 		&:nth-child(3) > .steps__img-container {
 			margin: 0 0 0 15rem;
+		}
+		&:nth-child(3) > .steps__title {
+			position: relative;
+			left: 7.6rem;
 		}
 		&:nth-child(1):before {
 			content: "";
