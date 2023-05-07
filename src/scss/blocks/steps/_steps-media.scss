@@ -9,12 +9,12 @@
 			&:nth-child(n) > .steps__img-container {
 				margin: 0;
 			}
+			&:nth-child(1),
+			&:nth-child(3) {
+				align-items: center;
+			}
 			&:nth-child(1) {
 				margin-left: 1.9rem;
-			}
-			&:nth-child(1) > .steps__title,
-			&:nth-child(3) > .steps__title {
-				position: static;
 			}
 			&:nth-child(2) {
 				margin-left: 12.4rem;
