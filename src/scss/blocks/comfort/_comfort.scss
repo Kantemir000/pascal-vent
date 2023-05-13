@@ -1,0 +1,137 @@
+.comfort {
+	overflow-x: hidden;
+	&__inner {
+		padding: 10rem 0;
+		display: flex;
+		gap: 10rem;
+	}
+	&__info-inner {
+		margin-top: 2.8rem;
+		max-width: 49.6rem;
+	}
+	&__title {
+		margin-top: 5.6rem;
+		white-space: nowrap;
+	}
+	&__icons {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+	&__icon-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 7rem;
+		height: 4rem;
+		border: 0.1rem solid var(--color-line);
+		border-radius: 2rem;
+	}
+	&__list {
+		margin-top: 3.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		font-weight: 400;
+		font-size: var(--font-size-descr-m);
+		color: var(--color-descr-light);
+	}
+	&__item {
+		position: relative;
+		margin-left: 1.55em;
+		&::before {
+			content: "";
+			position: absolute;
+			left: -2.5rem;
+			top: 0.1em;
+			width: 1.5rem;
+			height: 1.5rem;
+			border-radius: 100%;
+			border: 0.1rem solid var(--color-line);
+			line-height: 1.5em;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			left: -2.1rem;
+			top: 0.35em;
+			width: 0.7rem;
+			height: 0.7rem;
+			border-radius: 100%;
+			background-color: var(--color-line);
+		}
+	}
+	&__descr {
+		margin-top: 2.5rem;
+		font-size: var(--font-size-paragraph);
+		line-height: calc(var(--font-size-paragraph) + 1rem);
+		color: var(--color-paragraph);
+		& > span {
+			font-weight: bold;
+		}
+	}
+	&__btn {
+		margin-top: 5rem;
+	}
+	&__cards-container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 3.5rem;
+		&::before {
+			content: "";
+			width: 71.8rem;
+			height: 71.8rem;
+			position: absolute;
+			left: 8.3rem;
+			background: var(--color-bg-circle);
+			filter: blur(17.5rem);
+			z-index: -1;
+		}
+	}
+	&__cards-1,
+	&__cards-2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__cards-1 {
+		gap: 2rem;
+	}
+	&__cards-2 {
+		gap: 3rem;
+	}
+	&__card-container {
+		overflow: hidden;
+		filter: drop-shadow(0 0px 1rem rgba(26, 26, 26, 0.5));
+		border-radius: 3.9rem;
+	}
+	&__card-1 {
+		width: 27.3rem;
+		height: 35.8rem;
+		object-fit: cover;
+		object-position: -9rem center;
+	}
+	&__card-2 {
+		width: 26.7rem;
+		height: 35rem;
+		object-fit: cover;
+		object-position: -22.9rem 0;
+	}
+	&__card-3 {
+		width: 27.3rem;
+		height: 42.4rem;
+		object-fit: cover;
+		object-position: -14.8rem 1rem;
+		transform: scale(1.28);
+	}
+	&__card-4 {
+		width: 26.7rem;
+		height: 29.4rem;
+		object-fit: cover;
+		object-position: -2.8rem center;
+	}
+}

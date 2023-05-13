@@ -24,5 +24,8 @@
 		font-size: var(--font-size-paragraph);
 		line-height: calc(var(--font-size-paragraph) + 1rem);
 		color: var(--color-paragraph);
+		& > span {
+			font-weight: bold;
+		}
 	}
 }
